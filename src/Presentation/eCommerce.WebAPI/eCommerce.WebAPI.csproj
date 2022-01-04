@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\eCommerce.Infrastructure\eCommerce.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\eCommerce.SharedKernel\eCommerce.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\eCommerce.Persistence\eCommerce.Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\eCommerce.Application\eCommerce.Application.csproj" />
+  </ItemGroup>
+
+</Project>
